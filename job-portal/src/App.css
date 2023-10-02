@@ -1,0 +1,209 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a standard font family and background color */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+/* Define header styles */
+header {
+  background-color: #5c6670;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Apply styles to headings */
+h1, h2, h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Style the navigation bar */
+nav {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+/* Style links */
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Apply consistent padding to sections */
+section {
+  padding: 20px;
+}
+
+/* Style buttons */
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Style forms */
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+/* Style the footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+.maincontent{
+  display: grid;
+  grid-template-columns: repeat(3,33%);
+  grid-gap: 10px !important;
+}
+header{
+  display: flex;
+
+  justify-content:space-around;
+ 
+}
+header name{
+   margin-right: 200px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  header {
+      font-size: 24px;
+  }
+
+  h2 {
+      font-size: 24px;
+  }
+
+  nav {
+      font-size: 16px;
+  }
+}
+@media screen and (min-width: 750px ) and (max-width: 1200px){
+  .maincontent{
+    display: grid;
+    grid-template-columns: repeat(2,45%);
+    grid-gap: 100px !important;
+  }
+}
+@media screen and (max-width: 749px ){
+  .maincontent{
+    display: grid;
+    grid-template-columns: repeat(1,80%);
+    grid-gap: 100px !important;
+  }
+}
+/* .sorting{
+  margin:20px;
+} */
+
+h2{
+  color:#0056b3;
+}
+.sortingDiv{
+    margin: 20px;
+    display: flex;
+    justify-content:space-between;
+}
+.flowers {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #ff69b4; /* Adjust the flower color */
+  border-radius: 50%;
+  animation: fall 5s linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-10%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh); /* Adjust the distance the flowers fall */
+    opacity: 0;
+  }
+}
+.emp{
+  font-size: 60%;
+}
+label{
+  width: 100px;
+}
